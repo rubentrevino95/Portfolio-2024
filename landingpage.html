@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* About Section */
+    #about {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    #about h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 10px auto;
+      color: #555;
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+      padding: 40px 0;
+      background-color: #eaeaea;
+      text-align: center;
+    }
+
+    #portfolio h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .portfolio-item h3 {
+      padding: 15px;
+      font-size: 1.2rem;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    #contact p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Web Design Portfolio</h1>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio! I specialize in creating visually appealing and user-friendly web designs. Below is a showcase of some of my recent projects.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="project3.jpg" alt="Project 3">
+        <h3>Project 3</h3>
+      </div>
+      <!-- Add more portfolio items as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for collaborations or inquiries.</p>
+    <div class="social-links">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Email</a>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 My Web Design Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
